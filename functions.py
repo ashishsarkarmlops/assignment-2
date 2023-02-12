@@ -58,6 +58,23 @@ def check_with_head_or_not(df):
     # Find households without a head
     households_no_head = df.loc[df['idhogar'].isin(households_head[households_head == 0].index), :]
     return households_no_head['idhogar'].nunique()
+def check_no_head_same_target(df):
+    households_head = df.groupby('idhogar')['parentesco1'].sum()
+    households_no_head = df.loc[df['idhogar'].isin(households_head[households_head == 0].index), :]
+    households_no_head_equal = households_no_head.groupby('idhogar')['Target'].apply(lambda x: x.nunique() == 1)
+    return sum(households_no_head_equal == False)
+def fix_set_poverty_member(df):
+    """Below function fixes the target values for all the family member where there are different poverty level for family memebers in the same family"""
+    # Groupby the household and figure out the number of unique values
+    all_equal = df.groupby('idhogar')['Target'].apply(lambda x: x.nunique() == 1)
+    # Households where targets are not all equal
+    not_equal = all_equal[all_equal != True]
+    for household in not_equal.index:
+        # Find the correct label (for the head of household)
+        true_target = int(df[(df['idhogar'] == household) & (df['parentesco1'] == 1.0)]['Target'])
+        # Set the correct label for all members in the household
+        df.loc[df['idhogar'] == household, 'Target'] = true_target
+    return df        
 def rep_null_val(df):
     """Replaces all null values the dataframe 
        for following column replacing with 0 as per the finsdings during discovery""" 
@@ -73,7 +90,7 @@ def rep_null_val(df):
     return df
 def drop_columns(df):
     """This function takes the complete dataframe as input drops the unwanted columns and provides the exactly required dataframe""" 
-    df.drop(['SQBescolari', 'SQBage', 'SQBhogar_total', 'SQBedjefe', 'SQBhogar_nin', 'SQBovercrowding', 'SQBdependency', 'SQBmeaned', 'agesq','Id','idhogar','coopele', 'area2', 'tamhog', 'hhsize', 'hogar_total', 'r4t3','area2'],axis=1,inplace=True)
+    df.drop(['SQBescolari', 'SQBage', 'SQBhogar_total', 'SQBedjefe', 'SQBhogar_nin', 'SQBovercrowding', 'SQBdependency', 'SQBmeaned', 'agesq','Id','idhogar','coopele', 'area2', 'tamhog', 'hhsize', 'hogar_total', 'r4t3','area2','male'],axis=1,inplace=True)
     return df 
 def cleaning_pipeline(df):
     """Function takes the dataframe then 
@@ -256,3 +273,33 @@ def target_inference():
 get the opportunity learn very few Extreme poverty cases. And that can lead to a state where the
 model not identify the Extreme poor cases at all
     """
+def null_val_repl_basis():
+    """##### Inference 
+Looking at the different types of data and null values for each feature
+We found the following:
+*   No null values for Integer type features.
+*   No null values for object type features. 
+##### For float64 types below features has null value
+*   v2a1 6860 ==>71.77%  variable explaination => Monthly rent payment
+*   v18q1 7342 ==>76.82% variable explaination => Number of tablets household owns
+*   rez_esc 7928 ==>82.95% variable explaination => Years behind in school
+*   meaneduc 5 ==>0.05% variable explaination => average years of education for adults (18+)
+*   SQBmeaned 5 ==>0.05% variable explaination => square of the mean years of education of adults (>=18) in the household
+"""
+def null_val_replace_logic():
+    """ Null Value Replacement logic 
+    v2a1
+    #From above this is observed that the when house is fully paid there are no furthers monthly rents 
+    #Lets add 0 for all monhtly rents 
+    v18q1
+    #Looking at the above data it makes sense that when owns a tablet column is 0, there will be no number of tablets household owns. Lets add 0 for all the null values.
+    rez_esc 
+    #We can observe that when min age is 7 and max age is 17 for Years, then the 'behind in school' there is only on values that is missing.Lets add 0 for the null values.
+    meaneduc 
+    #From above outputs we infer that - There are five datapoints with meaneduc as NaN. And all have 18+ age. The value of meaneduc feature is same as 'edjefe' if the person is male and 'edjefa' if the person is female for majority of datapoints.
+    Hence, we treat the 5 NaN values by replacing the with respective 'edjefe'.
+    SQBmeaned  
+    #Square of the mean years of education of adults (>=18) in the household - 5 values hence lets replace the null values by respective ['meaneduc']**2
+    **************************************************************************************************************************************************************************************************************************************************
+    To fix the irregular columns we need to map yes:1||no:0
+"""    
