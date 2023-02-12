@@ -243,7 +243,10 @@ There are several variables here having to do with the size of the house:
     if st.sidebar.checkbox("Model Building"):
         st.text("Random Forrest Classifier was selected as per instructions")
         image = Image.open('Model 1 performance.jpg')
+        image2= Image.open('feature imp.jpg')
         st.image(image,caption='Model1 performance')
+        st.image(image2,caption='Feature Importance')
+        """From above figure, meaneduc, dependency, overcrowding has significant influence on the model."""
         st.text("Post Cross-Validtion and taking 150 trees the \n accuracy scores average increased from \n 94.25547753700772 to 94.30783352929198")
     if st.sidebar.checkbox("Predictions"):
         """Upload csv file for feeding data to model"""
