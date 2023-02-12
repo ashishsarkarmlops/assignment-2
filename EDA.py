@@ -16,9 +16,9 @@ from functions import cleaning_pipeline #Function that includes cleaning replaci
 income_train_df=pd.read_csv('train.csv')
 ###############################################################################################################################
 #Separating columns in different data types 
-float_columns=income_train_df.select_dtypes('float').columns
-int_columns=income_train_df.select_dtypes('int').columns
-object_columns=income_train_df.select_dtypes('object').columns
+float_columns=income_train_df.select_dtypes('float').columns.tolist()
+int_columns=income_train_df.select_dtypes('int').columns.tolist()
+object_columns=income_train_df.select_dtypes('object').columns.tolist()
 ###############################################################################################################################
 st.title('Description') 
 st.write('Identify the level of income qualification needed for the families in Latin America')
@@ -30,8 +30,7 @@ In Latin America, a popular method called Proxy Means Test (PMT) uses an algorit
 The Inter-American Development Bank (IDB) believes that new methods beyond traditional econometrics, based on a dataset of Costa Rican household characteristics, might help improve PMT’s performance.""")
 st.write('This application is a Streamlit dashboard to explore the dataset.') 
 if st.checkbox('Show Data Dictionary'): 
-    """
-# Variable Dictionary 
+    """ 
 1.	ID = Unique ID
 2.	v2a1, Monthly rent payment
 3.	hacdor, =1 Overcrowding by bedrooms
@@ -162,7 +161,7 @@ if st.checkbox('Show Data Dictionary'):
 128.	lugar4, =1 region Brunca
 129.	lugar5, =1 region Huetar AtlÃ¡ntica
 130.	lugar6, =1 region Huetar Norte
-131.	area1, =1 zona urbana
+131.	area1, =1 zoinformationna urbana
 132.	area2, =2 zona rural
 133.	age= Age in years
 134.	SQBescolari= escolari squared
@@ -174,18 +173,27 @@ if st.checkbox('Show Data Dictionary'):
 140.	SQBdependency, dependency squared
 141.	SQBmeaned, square of the mean years of education of adults (>=18) in the household
 142.	agesq= Age squared
-
-
     """
 if st.checkbox('Show sample dataset'):
     st.write('Sample Dataset') 
     st.dataframe(income_train_df.iloc[:5]) # Show the dataset in a dataframe
+#Show data size column types 
+if st.checkbox('Show columns and dtype information'):
+    st.write(f'Float type columns => {float_columns}')
+    st.write(f'Object type columns => {object_columns}')
+    st.write(f'Numerical columns => {int_columns}')
 # Show summary statistics of the dataset 
 if st.checkbox('Show summary statistics'):  
     st.write(income_train_df.describe())
 # Show number of missing values in each column  
-#if st.checkbox('Show number of missing values'):  
-#    st.pyplot(plot_null_values(income_train_df[float_columns],(4,2)))
+if st.checkbox('Show number of missing values'):  
+    st.write("Float Columns null value distribution")
+    dd=pd.DataFrame(income_train_df[float_columns].isnull().sum()/income_train_df.shape[0]).reset_index()
+    dd.columns=['Column Name','Null Val %']
+    st.dataframe(dd)
+    #st.write(f"{income_train_df[float_columns].isnull().sum()/income_train_df.shape[0]}")
+    plt.show()
+    st.pyplot()
 if st.checkbox('Show number of missing values'):
     st.bar_chart(plot_null_values(income_train_df[float_columns],(4,2)))
 # Show correlation matrix  

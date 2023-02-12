@@ -24,9 +24,7 @@ def heat_map_coor_plot(var1,figsize):
     takes a correlated matrix as one feature and figsize as s tuple"""
     plt.figure(figsize=figsize)
     sns.heatmap(var1,annot=True, cmap = sns.color_palette("Set2", 8), fmt='.3f')
-def plot_null_values(df, figsize):
-    """Adjusting Figuresize as per user requirement"""  
-    plt.figure(figsize=figsize)
+def plot_null_values(df):
     """Function expects two inputs 1) the data frame 2) a tuple (width,height)
     calculating null value percentage column wise and allocating to a dataframe"""
     null_values = df.isnull().sum()/len(df)*100
@@ -35,10 +33,6 @@ def plot_null_values(df, figsize):
     null_values.reset_index(inplace=True)
     """Renaming columns""" 
     null_values.columns=['Feature','Percentage of missing values']
-    """Rotating xlabels to fit the view""" 
-    plt.xticks(rotation=90)
-    """Barplot for null value percent in the dataframe provided""" 
-    #sns.barplot(x='Feature',y='Percentage of missing values',data=null_values)
     return null_values
     
 def replace_yes_no(df): 
