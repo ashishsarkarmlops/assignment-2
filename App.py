@@ -54,7 +54,7 @@ def main ():# beginning of the statement execution
     st.markdown(html_temp, unsafe_allow_html=True)
     st.subheader("EDA Web App")
     st.text("Team: Ashish Sarkar, Prajwal Rajput,Shraddha Mungal,Aryan Patle")
-    st.text("Mentor: Shriti Dutta")
+    st.text("Mentor: Shriti Datta")
     if st.sidebar.checkbox('Problem Statement'):
         problem_stat
     if st.sidebar.checkbox('Show Data Dictionary'):
