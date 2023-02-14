@@ -5,16 +5,43 @@ import seaborn as sns
 
 """This File contains the reposiitory of all the function being used in the Income qualification project""" 
 def Read_data(filename):
-    #this function reads the file from the current directory
+    """
+    Read a CSV file and return the data as a pandas DataFrame.
+
+    Parameters:
+    filename (str): The name of the CSV file to be read.
+
+    Returns:
+    pandas.DataFrame: A DataFrame containing the data from the CSV file.
+    """
     return pd.read_csv(filename)
 
 def find_target(df1,df2):
-    """Will be used to find the target variable from the data sets 
-    #function takes two datasets as input and provides with the column name that is not present in the test set""" 
+    """
+    Find the target column in two DataFrames and return the common target column.
+    Function takes two datasets as input and provides with the column name that is not present in the test set.
+
+    Parameters:
+    df1 (pandas.DataFrame): The first DataFrame to be compared.
+    df2 (pandas.DataFrame): The second DataFrame to be compared.
+
+    Returns:
+    str: The name of the target column that is present in `df1` but not in `df2`.
+    """ 
     return (list(set(df1.columns)-set(df2.columns)))[0]
 def analyse_catagorical_col(df,col_name,figsize):
-    """Function can be used to analyse the categorical features would provide a countplot as an output for the provided (datafarame and column name and a tuple for figuresize) are the expected input variables  
-    to adjust figsize""" 
+    """
+    Function can be used to analyse the categorical features would provide a countplot as an output for the provided (datafarame and column name and a tuple for figuresize)
+    are the expected input variables to adjust figsize and plot its cardinality distribution.
+
+    Parameters:
+    df (pandas.DataFrame): The DataFrame containing the categorical column.
+    col_name (str): The name of the categorical column to be analyzed.
+    figsize (tuple): The size of the plot.
+
+    Returns:
+    None
+    """ 
     plt.figure(figsize=figsize)
     """forms a countplot for each category"""
     sns.countplot(x=df[f'{col_name}'])
@@ -23,11 +50,28 @@ def analyse_catagorical_col(df,col_name,figsize):
     """Show the plot""" 
     plt.show()
 def heat_map_coor_plot(var1,figsize):
-    """This function creates a heatmap on the highly correlated features 
-    takes a correlated matrix as one feature and figsize as s tuple"""
+    """
+    Plot a heat map and coordinate plot to visualize the correlations between variables in a pandas DataFrame.
+
+    Parameters:
+    var1 (pandas.DataFrame): The DataFrame containing the variables to be analyzed.
+    figsize (tuple): The size of the plot.
+
+    Returns:
+    None
+    """
     plt.figure(figsize=figsize)
     sns.heatmap(var1,annot=True, cmap = sns.color_palette("Set2", 8), fmt='.3f')
 def plot_null_values(df):
+    """
+    Plot a bar chart to visualize the count of missing values in each column of a pandas DataFrame.
+
+    Parameters:
+    df (pandas.DataFrame): The DataFrame to be analyzed.
+
+    Returns:
+    None
+    """
     null_values = (df.isnull().sum()/len(df)*100).sort_values(ascending=False)
     null_values = pd.DataFrame(null_values)
     """Reset the index to form it in proper dataframe"""
@@ -37,8 +81,16 @@ def plot_null_values(df):
     return null_values
     
 def replace_yes_no(df): 
-    """This function replaces the Yes:1 and No:0 for the following columns and returns 
-       the dataframe expects the the dataframe as input"""
+    """ 
+    This function replaces the Yes:1 and No:0 for the following columns and returns 
+    the dataframe expects the the dataframe as input
+    
+    Parameters:
+    df (pandas.DataFrame): The DataFrame to be processed.
+
+    Returns:
+    df: pandas DataFrame with specified columns having yes/no values replaced with 1/0.
+    """
     mapping = {'yes' :1, 'no' :0}
     for i in df:
         df['dependency']= df['dependency'].replace(mapping).astype(float)
@@ -47,13 +99,29 @@ def replace_yes_no(df):
         df['meaneduc']= df['meaneduc'].replace(mapping).astype(float)
     return df
 def check_all_member_same_target(df):
-    """This function checks in the data with the help if idhogar column as that is the unique 
-    identification for each family that the poverty level is same ir not"""
+    """
+    The function 'check_all_member_same_target' checks if all members of a household have the same poverty level target.
+
+    Parameters:
+    df (pandas dataframe): A pandas dataframe containing household and poverty level data.
+
+    Returns:
+    int: The number of households in which all members do not have the same poverty level target.
+    """
     all_equal=df.groupby('idhogar')['Target'].apply(lambda x: x.nunique() == 1)
     not_equal = all_equal[all_equal != True]
     return len(not_equal)
 def check_with_head_or_not(df):
-    """This function check for the number of families that are without heads"""
+    """
+    Check the number of households without a designated head.
+
+    Parameters:
+    df (DataFrame): The DataFrame containing the household information.
+
+    Returns:
+    int: The number of households without a designated head.
+
+    """
     households_head = df.groupby('idhogar')['parentesco1'].sum()
     # Find households without a head
     households_no_head = df.loc[df['idhogar'].isin(households_head[households_head == 0].index), :]
@@ -64,7 +132,17 @@ def check_no_head_same_target(df):
     households_no_head_equal = households_no_head.groupby('idhogar')['Target'].apply(lambda x: x.nunique() == 1)
     return sum(households_no_head_equal == False)
 def fix_set_poverty_member(df):
-    """Below function fixes the target values for all the family member where there are different poverty level for family memebers in the same family"""
+    """
+    This function checks if there are any households in the data that have no head of household, 
+    and if the poverty level (target) is the same for all members of those households.
+
+    Parameters:
+    df: pandas DataFrame containing the data
+    
+    Returns:
+    int: The number of households with no head of household and where the poverty level is not the same for all members
+    
+    """
     # Groupby the household and figure out the number of unique values
     all_equal = df.groupby('idhogar')['Target'].apply(lambda x: x.nunique() == 1)
     # Households where targets are not all equal
@@ -76,8 +154,17 @@ def fix_set_poverty_member(df):
         df.loc[df['idhogar'] == household, 'Target'] = true_target
     return df        
 def rep_null_val(df):
-    """Replaces all null values the dataframe 
-       for following column replacing with 0 as per the finsdings during discovery""" 
+    """
+    This function is used to replace the missing values in the DataFrame for following 
+    column replacing with 0 as per the finsdings during discovery.
+
+    Parameters:
+    df (pandas.DataFrame): The DataFrame which contains the data to be processed.
+
+    Returns:
+    df (pandas.DataFrame): The processed DataFrame with missing values replaced.
+
+    """ 
     df['v2a1'].fillna(0,inplace=True)
     """For following column replacing with 0 as per the findings during discovery"""
     df['v18q1'].fillna(0,inplace=True)
@@ -89,14 +176,33 @@ def rep_null_val(df):
     df['SQBmeaned'].fillna(df['meaneduc']**2,inplace=True)
     return df
 def drop_columns(df):
-    """This function takes the complete dataframe as input drops the unwanted columns and provides the exactly required dataframe""" 
+    """
+    This function removes the unwanted columns that are deemed unnecessary for the analysis 
+    and provides the exactly required dataframe
+   
+    Parameters:
+    df: Pandas DataFrame.
+
+    Returns:
+    df: The input Pandas DataFrame with specific columns dropped.
+   
+    """ 
     df.drop(['SQBescolari', 'SQBage', 'SQBhogar_total', 'SQBedjefe', 'SQBhogar_nin', 'SQBovercrowding', 'SQBdependency', 'SQBmeaned', 'agesq','Id','idhogar','coopele', 'area2', 'tamhog', 'hhsize', 'hogar_total', 'r4t3','area2','male'],axis=1,inplace=True)
     return df 
 def cleaning_pipeline(df):
-    """Function takes the dataframe then 
-        1) replaces yes with 1 and no with 0 
-        2) replaces all the null values in the reuired pattern as per discovery
-        3) deletes all the unwanted columns"""  
+    """
+    Cleaning_pipeline is a function that performs a series of cleaning operations on the input dataframe.
+
+    Parameters:
+    df: Pandas DataFrame, input dataframe which needs to be cleaned.
+
+    Returns:
+    df3: Pandas DataFrame, Cleaned dataframe
+
+    The function replaces 'yes' and 'no' values in some columns with 1 and 0, fills null values in certain columns, 
+    and drops some columns which are not needed. The cleaned dataframe is returned as the output.
+
+    """  
     df1=replace_yes_no(df)
     df2=rep_null_val(df1)
     df3=drop_columns(df2)
