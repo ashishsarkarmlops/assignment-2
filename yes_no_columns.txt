@@ -1,0 +1,1010 @@
+
+
+**************************************************************************************************************
+Dependent Variable hacdor 
+ Independent Variable Target
+P-Value 1.6950851807802865e-13 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.6950851807802865e-13
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable hacapo 
+ Independent Variable Target
+P-Value 8.126047911289306e-08 
+ DOF 9556 
+ Threshold 0.05
+p value is 8.126047911289306e-08
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable v14a 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable refrig 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable v18q 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredblolad 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredzocalo 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredpreb 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable pareddes 
+ Independent Variable Target
+P-Value 0.0004904652227954658 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.0004904652227954658
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredmad 
+ Independent Variable Target
+P-Value 0.9999999999987162 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999999987162
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredzinc 
+ Independent Variable Target
+P-Value 0.9906988228939632 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9906988228939632
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredfibras 
+ Independent Variable Target
+P-Value 4.2238355573842175e-32 
+ DOF 9556 
+ Threshold 0.05
+p value is 4.2238355573842175e-32
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable paredother 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisomoscer 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisocemento 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisoother 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisonatur 
+ Independent Variable Target
+P-Value 5.514506865686479e-65 
+ DOF 9556 
+ Threshold 0.05
+p value is 5.514506865686479e-65
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisonotiene 
+ Independent Variable Target
+P-Value 4.369458972837222e-05 
+ DOF 9556 
+ Threshold 0.05
+p value is 4.369458972837222e-05
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable pisomadera 
+ Independent Variable Target
+P-Value 0.9999999960171889 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999960171889
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable techozinc 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable techoentrepiso 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable techocane 
+ Independent Variable Target
+P-Value 7.518199512784808e-22 
+ DOF 9556 
+ Threshold 0.05
+p value is 7.518199512784808e-22
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable techootro 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable cielorazo 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable abastaguadentro 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable abastaguafuera 
+ Independent Variable Target
+P-Value 0.9999999999999442 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999999999442
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable abastaguano 
+ Independent Variable Target
+P-Value 1.7200796543645468e-10 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.7200796543645468e-10
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable public 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable planpri 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable noelec 
+ Independent Variable Target
+P-Value 4.739948035655431e-15 
+ DOF 9556 
+ Threshold 0.05
+p value is 4.739948035655431e-15
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable coopele 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable sanitario1 
+ Independent Variable Target
+P-Value 0.020466835631843337 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.020466835631843337
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable sanitario2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable sanitario3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable sanitario5 
+ Independent Variable Target
+P-Value 1.6319131285491187e-05 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.6319131285491187e-05
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable sanitario6 
+ Independent Variable Target
+P-Value 0.9999995838553104 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999995838553104
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable energcocinar1 
+ Independent Variable Target
+P-Value 1.922563756854736e-22 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.922563756854736e-22
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable energcocinar2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable energcocinar3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable energcocinar4 
+ Independent Variable Target
+P-Value 0.22039172692617365 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.22039172692617365
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable elimbasu1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable elimbasu2 
+ Independent Variable Target
+P-Value 0.9999999992603091 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999992603091
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable elimbasu3 
+ Independent Variable Target
+P-Value 0.9999999922388538 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999922388538
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable elimbasu4 
+ Independent Variable Target
+P-Value 0.06514039331101887 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.06514039331101887
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable elimbasu6 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable epared1 
+ Independent Variable Target
+P-Value 0.999016231295941 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.999016231295941
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable epared2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable epared3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable etecho1 
+ Independent Variable Target
+P-Value 0.9999999837999474 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999837999474
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable etecho2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable etecho3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable eviv1 
+ Independent Variable Target
+P-Value 0.9986199973282273 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9986199973282273
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable eviv2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable eviv3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable dis 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable male 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable female 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil4 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil5 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil6 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable estadocivil7 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco4 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco5 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco6 
+ Independent Variable Target
+P-Value 0.9999999999999999 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999999999999
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco7 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco8 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco9 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco10 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco11 
+ Independent Variable Target
+P-Value 0.9999999999999964 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999999999964
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable parentesco12 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel4 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel5 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel6 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel7 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel8 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable instlevel9 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable tipovivi1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable tipovivi2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable tipovivi3 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable tipovivi4 
+ Independent Variable Target
+P-Value 2.064452267837011e-07 
+ DOF 9556 
+ Threshold 0.05
+p value is 2.064452267837011e-07
+Dependent (Reject H0) Variable is Significant
+
+
+**************************************************************************************************************
+Dependent Variable tipovivi5 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable computer 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable television 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable mobilephone 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar3 
+ Independent Variable Target
+P-Value 0.9999999999999877 
+ DOF 9556 
+ Threshold 0.05
+p value is 0.9999999999999877
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar4 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar5 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable lugar6 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable area1 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant
+
+
+**************************************************************************************************************
+Dependent Variable area2 
+ Independent Variable Target
+P-Value 1.0 
+ DOF 9556 
+ Threshold 0.05
+p value is 1.0
+Independent (Accept H0) Variable is not Significant

@@ -165,16 +165,15 @@ def rep_null_val(df):
     df (pandas.DataFrame): The processed DataFrame with missing values replaced.
 
     """ 
-    df['v2a1'].fillna(0,inplace=True)
+    df['v2a1']=df['v2a1'].fillna(0)
     """For following column replacing with 0 as per the findings during discovery"""
-    df['v18q1'].fillna(0,inplace=True)
+    df['v18q1']=df['v18q1'].fillna(0)
     """For following column replacing with 0 as per the findings during discovery"""
-    df['rez_esc'].fillna(0,inplace=True)
+    df['rez_esc']=df['rez_esc'].fillna(0,inplace=True)
     """For following column replacing with 'edjefe' columns respective value as per the findings during discovery"""
-    df['meaneduc'].fillna(df['edjefe'],inplace=True)
+    df['meaneduc']=df['meaneduc'].fillna(df['edjefe'],inplace=True)
     """For following column replacing with square of 'meaneduc' columns respective value as per the findings during discovery"""
-    df['SQBmeaned'].fillna(df['meaneduc']**2,inplace=True)
-    return df
+    df['SQBmeaned']=df['SQBmeaned'].fillna(df['meaneduc']**2,inplace=True)
 def drop_columns(df):
     """
     This function removes the unwanted columns that are deemed unnecessary for the analysis 
